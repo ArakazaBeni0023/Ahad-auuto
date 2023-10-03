@@ -1,0 +1,114 @@
+:root {
+    --danger: #dc3545;
+    --primary: #007bff;
+    --info: #17a2b8;
+    --lowlight: #fbfbfb;
+    --light: #f8f9fa;
+    --dark: #232323;
+    --bgicon: #939393;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family: 'Leelawadee';
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    background: var(--lowlight);
+}
+
+.block-info {
+    padding-right: 1rem;
+}
+
+/* content */
+.info-image img {
+    width: 100%;
+    height: auto;
+}
+
+.info-details-item h5 {
+    font-weight: 700;
+}
+
+.sidebar {
+    height: 100%;
+}
+
+.files .bi-file-earmark-text {
+    font-size: 2rem;
+    padding: 15px;
+    color: var(--dark);
+}
+
+.files .bi-file-earmark-text:hover {
+    color: var(--danger);
+}
+
+/* resultat  */
+.sub-title {
+    color: rgb(108, 108, 108);
+    font-size: 1rem;
+}
+
+/* contact */
+.contact {
+    background: linear-gradient(to right, rgb(80, 192, 245), rgba(203, 244, 248, 0.567));
+    border-radius: 8px;
+}
+
+.contact .btn {
+    transition: all ease .5s;
+}
+
+.image img {
+    width: 50%;
+    height: auto;
+}
+
+@media (max-width:768px) {
+    .block-info {
+        padding-right: 0;
+    }
+
+    .image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contact {
+        background: linear-gradient(to bottom, rgb(80, 192, 245), rgba(203, 244, 248, 0.567));
+    }
+}
+
+@media (max-width:568px) {
+    .image img {
+        width: 45%;
+        height: auto;
+    }
+}
+
+/* footer */
+.social i {
+    padding: 10px;
+    font-size: 1.2rem;
+    color: var(--dark);
+}
+
+.social i:hover {
+    color: var(--bgicon);
+}

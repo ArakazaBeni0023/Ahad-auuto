@@ -1,0 +1,86 @@
+:root {
+    --linkhover: #0000000b;
+    --lowlightscrollbar: #f0f0f0;
+}
+
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: .6rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3b405c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2e303b;
+}
+
+/* header */
+.header {
+    z-index: 1000;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+/* nav */
+.toggler-btn {
+    width: 70px;
+    height: 70px;
+    right: 8%;
+    position: absolute;
+}
+
+.navbar-toggler {
+    border: 2px solid #232323;
+    transition: all ease-in .3s;
+}
+
+.navbar-toggler i {
+    font-size: 1.5rem;
+}
+
+.navbar-toggler:hover {
+    background: var(--dark);
+    color: var(--light);
+}
+
+.navbar-toggler i:hover {
+    color: var(--light);
+}
+
+.navbar-collapse {
+    transition: all ease .8s;
+}
+
+.navbar-nav .nav-item {
+    padding: 5px;
+    margin-bottom: 3px;
+    transition: all ease .5s;
+}
+
+.navbar-nav .nav-item:hover {
+    background: var(--linkhover);
+    font-weight: 600;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: var(--dark);
+    font-weight: 600;
+}
+
+.active {
+    background: var(--linkhover);
+}

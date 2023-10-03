@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | AHAD AUTO</title>
+    <!-- logo -->
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon">
+    <!-- framework link-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- style link -->
+    <link rel="stylesheet" href="assets/css/nav-style.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <!-- icons link -->
+    <link rel="stylesheet" href="assets/lib/et-line-font/et-line-font.css">
+    <link rel="stylesheet" href="assets/lib/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="container-fluid header shadow-sm p-1 ">
+        <div class="container">
+            <div class="row">
+                <div href="#" class="logo">
+                    <a href="index.html"><img src="assets/images/logo.png" class="img-fluid"></a>
+                </div>
+                <div class="toggler-btn pt-3">
+                    <!-- togglle button -->
+                    <button class="navbar-toggler d-block m-auto" data-toggle="collapse" data-target="#navbarNav">
+                        <i class="bi bi-justify-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="collapse  navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav p-3">
+                    <li class="nav-item"><a href="index.html" class="nav-link p-2">Accueil</a></li>
+                    <li class="nav-item"><a href="formation.html" class="nav-link p-2">Formation</a></li>
+                    <li class="nav-item"><a href="garage.html" class="nav-link">Garage</a></li>
+                    <li class="nav-item"><a href="apropos.html" class="nav-link p-2">A propos</a></li>
+                    <li class="nav-item active"><a href="contact.html" class="nav-link p-2">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- banner -->
+    <div class="container-fluid banner mb-5 p-0">
+        <img src="assets/images/bg-contact.jpg" class="img-fluid" alt="banner">
+        <h1 class="banner-title"> Contactez-nous</h1>
+    </div>
+    <!-- contact -->
+    <section class="module mb-5" id="contact">
+        <div class="container contact mt-5">
+            <div class="row mb-1">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <h2 class="module-title">Contactez nous</h2>
+                    <div class="module-subtitle font-serif">Si vous avez une question ou une demande.</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-8">
+                    <form id="contactForm" role="form" method="post" action="php/contact.php">
+                        <div class="form-group">
+                            <label class="sr-only" for="name">Nom</label>
+                            <input class="form-control" type="text" id="nom" name="nom" placeholder="Votre nom*"
+                                required="required" data-validation-required-message="Entrez votre nom svp." />
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="email">Email</label>
+                            <input class="form-control" type="email" id="email" name="email" placeholder="E-mail*"
+                                required="required" data-validation-required-message="Entrez votre email svp" />
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" rows="7" id="message" name="message"
+                                placeholder="Votre message*" required
+                                data-validation-required-message="Entrez votre email svp"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button class="btn btn-dark btn-block btn-round btn-d" id="submit"
+                                type="submit">Envoyer</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-sm-4 pt-5">
+                    <div class="alt-features-item mt-0">
+                        <div class="alt-features-icon"><span class="icon-megaphone"></span></div>
+                        <h3 class="alt-features-title font-alt">où nous trouver</h3>AHAD AUTO<br />Lycée Municipale de
+                        Buyenzi |
+                        Bujumbura | Burundi
+                    </div>
+                    <div class="alt-features-item mt-xs-60">
+                        <div class="alt-features-icon"><span class="icon-map"></span></div>
+                        <h3 class="alt-features-title font-alt">Nous dire Bonjour</h3>Email:
+                        info@ahadauto.com<br /><i class="bi bi-telephone"></i>: (+257)
+                        68 882 211 <br> <i class="bi bi-whatsapp"></i> : (+257)
+                        68 882 211
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="assets/js/jquery.slim.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+</html>

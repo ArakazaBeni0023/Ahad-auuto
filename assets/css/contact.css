@@ -1,0 +1,197 @@
+:root {
+    --danger: #dc3545;
+    --primary: #007bff;
+    --info: #17a2b8;
+    --lowlight: #fbfbfb;
+    --light: #f8f9fa;
+    --dark: #232323;
+    --bgicon: #939393;
+    --bgnav: rgba(0, 0, 0, 0.450);
+    --darklink: #00000088;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family: 'Leelawadee';
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    background: var(--lowlight);
+}
+
+header {
+    position: absolute;
+    background: var(--bgnav);
+}
+
+.navbar-toggler {
+    border: 2px solid var(--light);
+    transition: all ease-in .3s;
+}
+
+.navbar-toggler i {
+    font-size: 1.5rem;
+    color: var(--light);
+}
+
+.navbar-toggler:hover {
+    background: var(--light);
+}
+
+.navbar-toggler:hover i {
+    color: var(--dark);
+}
+
+.navbar-nav .nav-item {
+    padding: 5px;
+    margin-bottom: 3px;
+}
+
+.navbar-nav .nav-item:hover {
+    background: var(--darklink);
+    font-weight: 600;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: var(--light);
+    font-weight: 600;
+}
+
+.active {
+    background: var(--darklink);
+}
+
+/* resultat  */
+.banner {
+    width: 100%;
+    height: 89vh;
+    background: #000;
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+}
+
+.banner-title {
+    position: absolute;
+    top: 35%;
+    left: 30%;
+    color: #fff;
+    text-shadow: 2px 0px 3px #2c2c2c;
+    z-index: 1;
+    font-size: 5.5rem;
+}
+
+@media(max-width:768px) {
+    .banner {
+        width: 100%;
+        height: 51vh;
+        background: #000;
+    }
+
+    .banner img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner-title {
+        font-size: 2.8rem;
+        top: 25%;
+        left: 18%;
+    }
+}
+
+.module {
+    margin-top: 5rem;
+}
+
+.contact {
+    background: #fff;
+    padding: 1rem;
+    box-shadow: 0px 0px 12px rgba(160, 160, 160, 0.15);
+    border-radius: 8px;
+}
+
+.contact .module-title {
+    margin-bottom: 1rem;
+    color: #000;
+}
+
+.alt-features-icon {
+    line-height: 1.2;
+    font-size: 42px;
+    color: #111;
+}
+
+.alt-features-title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #111;
+    margin: 16px 0 15px;
+}
+
+.alt-features-item {
+    position: relative;
+    padding-left: 55px;
+    margin-top: 1rem;
+}
+
+.alt-features-icon {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    left: 0;
+    top: 0;
+    text-align: center;
+    line-height: 40px;
+    font-size: 28px;
+}
+
+.alt-features-title {
+    font-size: 13px;
+    margin: 0 0 10px;
+}
+
+.mt-xs-60 {
+    margin-top: 3rem;
+}
+
+.btn-dark {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn-dark:hover {
+    background-color: #222;
+}
+
+.font-alt {
+    font-size: x-small;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.font-serif {
+    font-size: x-small;
+    font-family: Volkhov, "Times New Roman", sans-serif;
+    font-style: italic;
+}
